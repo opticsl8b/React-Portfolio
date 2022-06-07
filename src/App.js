@@ -4,6 +4,7 @@ import Home from "./componets/Home";
 import About from "./componets/About";
 import Skills from "./componets/Skills";
 import Qualifications from "./componets/Qualifications";
+import Service from "./componets/Service";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Qualifications />
+      <Service />
     </>
   );
 }
