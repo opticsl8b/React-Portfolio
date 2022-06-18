@@ -1,6 +1,21 @@
 import React from "react";
 
 const Header = () => {
+  const navMenu = document.getElementById("nav-menu");
+  const navToggle = document.getElementById("nav-toggle");
+  const navClose = document.getElementById("nav-close");
+  const navLink = document.querySelectorAll(".nav-link");
+
+  function handleClick(e) {
+    e.preventDefault();
+    if (navToggle) {
+      navMenu.classList.add("show-menu");
+    }
+    if (navClose) {
+      navMenu.classList.remove("show-menu");
+    }
+  }
+
   return (
     <header class="header" id="header">
       <nav class="nav container">
@@ -44,14 +59,18 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav-close" id="nav-close"></i>
+          <i
+            class="uil uil-times nav-close"
+            id="nav-close"
+            onClick={handleClick}
+          ></i>
         </div>
 
         <div class="nav-btns">
           {/* <!-- Theme Cheng Button --> */}
           <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-          <div class="nav-toggle" id="nav-toggle">
+          <div class="nav-toggle" id="nav-toggle" onClick={handleClick}>
             <i class="uil uil-apps"></i>
           </div>
         </div>

@@ -958,7 +958,7 @@ img {
     text-align: initial;
   }
   .about-info {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .about-buttons {
     justify-content: initial;

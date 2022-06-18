@@ -7,11 +7,11 @@ const About = () => {
       <span class="section-subtitle">My Introduction</span>
 
       <div class="about-container container grid">
-        {/* <img src="./asset/img/about.jpg" alt="" class="about-img"> */}
+        <img src="/images/about.jpg" alt="" class="about-img" />
         <div class="about-data">
           <p class="about-description">
-            Web developer chela, with strong momentum to absorb, targeting in
-            web technologies and Ui / Ux design, delivering quality work.
+            With strong momentum to absorb, targeting in web technologies and UI
+            / UX design, delivering quality work.
           </p>
 
           <div class="about-info">
@@ -23,26 +23,22 @@ const About = () => {
             </div>
 
             <div>
-              <span class="about-info-title">15+</span>
+              <span class="about-info-title">25+</span>
               <span class="about-info-name">
                 Completed <br /> project
               </span>
             </div>
 
-            <div>
+            {/* <div>
               <span class="about-info-title">8+</span>
               <span class="about-info-name">
                 Companies <br /> worked
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div class="about-buttons">
-            <a
-              download=""
-              href="./asset/pdf/GeorgeCV.pdf"
-              class="button button--flex"
-            >
+            <a download="" href="/pdf/GeorgeCV.pdf" class="button button--flex">
               Download CV
               <i class="uil uil-download-alt button-icon"></i>
             </a>

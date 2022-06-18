@@ -63,8 +63,8 @@ const Home = () => {
           {/* <img src="/images/perfil.png" alt="perfil.png" /> */}
 
           <div className="home-data">
-            <h1 className="home-title">Hi, I'am George</h1>
-            <h3 className="home-subtitle">Web Development chela,</h3>
+            <h1 className="home-title">Hi, I'am SzuYuan</h1>
+            <h3 className="home-subtitle">Full-Stack Developer</h3>
             <p className="home-description">
               Love to work with inspiring & creative projects and people. Also a
               blockchain surfer.
