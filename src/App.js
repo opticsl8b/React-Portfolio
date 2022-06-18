@@ -4,7 +4,7 @@ import Home from "./componets/Home";
 import About from "./componets/About";
 import Skills from "./componets/Skills";
 import Qualifications from "./componets/Qualifications";
-import Service from "./componets/Service";
+// import Service from "./componets/Service";
 import Portfolio from "./componets/Portfolio";
 import ContactMe from "./componets/ContactMe";
 

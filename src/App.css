@@ -864,6 +864,7 @@ img {
     grid-column: initial;
   }
   .home-img {
+    display: flex;
     order: 1;
     justify-self: center;
     margin-right: var(--mb-2);
