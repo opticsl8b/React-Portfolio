@@ -4,13 +4,15 @@ const Header = () => {
   const navMenu = document.getElementById("nav-menu");
   const navToggle = document.getElementById("nav-toggle");
   const navClose = document.getElementById("nav-close");
-  const navLink = document.querySelectorAll(".nav-link");
 
-  function handleClick(e) {
+  function handleClickShow(e) {
     e.preventDefault();
     if (navToggle) {
       navMenu.classList.add("show-menu");
     }
+  }
+  function handleClickRemove(e) {
+    e.preventDefault();
     if (navClose) {
       navMenu.classList.remove("show-menu");
     }
@@ -62,7 +64,7 @@ const Header = () => {
           <i
             class="uil uil-times nav-close"
             id="nav-close"
-            onClick={handleClick}
+            onClick={handleClickRemove}
           ></i>
         </div>
 
@@ -70,7 +72,7 @@ const Header = () => {
           {/* <!-- Theme Cheng Button --> */}
           <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-          <div class="nav-toggle" id="nav-toggle" onClick={handleClick}>
+          <div class="nav-toggle" id="nav-toggle" onClick={handleClickShow}>
             <i class="uil uil-apps"></i>
           </div>
         </div>
