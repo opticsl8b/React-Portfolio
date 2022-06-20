@@ -13,67 +13,97 @@ const Header = () => {
   }
   function handleClickRemove(e) {
     e.preventDefault();
+
     if (navClose) {
       navMenu.classList.remove("show-menu");
     }
   }
 
+  function handleClickRemoveNav(e) {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.remove("show-menu");
+  }
+
   return (
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="..." class="nav-logo" id="author-name">
+    <header className="header" id="header">
+      <nav className="nav container">
+        <a href="..." className="nav-logo" id="author-name">
           George
         </a>
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list grid">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">
-                <i class="uil uil-estate nav-icon"></i> Home
+        <div className="nav-menu" id="nav-menu">
+          <ul className="nav-list grid">
+            <li className="nav-item">
+              <a
+                href="#home"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-estate nav-icon"></i> Home
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
-                <i class="uil uil-user-square nav-icon"></i> About
+            <li className="nav-item">
+              <a
+                href="#about"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-user-square nav-icon"></i> About
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">
-                <i class="uil uil-file-alt nav-icon"></i> Skills
+            <li className="nav-item">
+              <a
+                href="#skills"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-file-alt nav-icon"></i> Skills
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#services" class="nav-link">
-                <i class="uil uil-briefcase-alt nav-icon"></i> Services
+            <li className="nav-item">
+              <a
+                href="#services"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-briefcase-alt nav-icon"></i> Services
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">
-                <i class="uil uil-scenery nav-icon"></i> Portfolio
+            <li className="nav-item">
+              <a
+                href="#portfolio"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-scenery nav-icon"></i> Portfolio
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">
-                <i class="uil uil-message nav-icon"></i> Contact Me
+            <li className="nav-item">
+              <a
+                href="#contact"
+                className="nav-link"
+                onClick={handleClickRemoveNav}
+              >
+                <i className="uil uil-message nav-icon"></i> Contact Me
               </a>
             </li>
           </ul>
           <i
-            class="uil uil-times nav-close"
+            className="uil uil-times nav-close"
             id="nav-close"
             onClick={handleClickRemove}
           ></i>
         </div>
 
-        <div class="nav-btns">
+        <div className="nav-btns">
           {/* <!-- Theme Cheng Button --> */}
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <i className="uil uil-moon change-theme" id="theme-button"></i>
 
-          <div class="nav-toggle" id="nav-toggle" onClick={handleClickShow}>
-            <i class="uil uil-apps"></i>
+          <div className="nav-toggle" id="nav-toggle" onClick={handleClickShow}>
+            <i className="uil uil-apps"></i>
           </div>
         </div>
       </nav>
